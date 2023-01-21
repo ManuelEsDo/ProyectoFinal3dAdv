@@ -1,0 +1,36 @@
+<form class="form" action="<?= $block->getUrl('finalproject/index/submit'); ?>" method="post">
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Formulario de registro') ?></span></legend><br>
+        <div class="field required">
+            <label for="text" class="label"><span> Primer Nombre  </span></label>
+            <div class="control">
+                <input type="text" id="fisrt_name" name="fisrt_name" class="input-text"/>
+            </div>
+        </div>
+        <div class="field required">
+            <label for="text" class="label"><span> Segundo Nombre   </span></label>
+            <div class="control">
+                <input type="text" id="last_name" name="last_name" class="input-text"/>
+            </div>
+        </div> 
+         <div class="field required">
+            <label for="tex" class="label"><span> Correo   </span></label>
+            <div class="control">
+                <input type="email" id="email" name="email" class="input-text"/>
+            </div>
+        </div>          
+        <div class="field required">
+            <label for="number" class="label"><span> Telefono   </span></label>
+            <div class="control">
+                <input type="number" id="telephone" name="telephone" class="input-text"/>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>">
+                <span><?php /* @escapeNotVerified */ echo __('Enviar datos') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
